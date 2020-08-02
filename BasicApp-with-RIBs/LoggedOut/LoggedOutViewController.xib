@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoggedOutViewController" customModule="BasicApp_with_RIBs" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="9LS-SE-hb6" id="qK8-Lv-MaE"/>
+                <outlet property="logInButton" destination="f7e-qF-wrq" id="gZl-O3-aP1"/>
+                <outlet property="passwordTextField" destination="ddA-4x-Rse" id="h0h-qX-UNP"/>
+                <outlet property="signUpButton" destination="4mK-uC-38F" id="E5p-Bi-3xJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eOK-OB-Sem"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlh-cm-pei">
+                    <rect key="frame" x="30" y="94" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9LS-SE-hb6">
+                    <rect key="frame" x="30" y="125" width="354" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSk-vr-xXa">
+                    <rect key="frame" x="30" y="179" width="59" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-4x-Rse">
+                    <rect key="frame" x="30" y="210" width="354" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7e-qF-wrq">
+                    <rect key="frame" x="147" y="294" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.1474756002" green="0.61427491899999997" blue="0.93729335069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Arb-dr-fzb"/>
+                        <constraint firstAttribute="height" constant="30" id="RhB-m5-9ka"/>
+                    </constraints>
+                    <state key="normal" title="로그인">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mK-uC-38F">
+                    <rect key="frame" x="147" y="344" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.1474756002" green="0.61427491899999997" blue="0.93729335069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2uS-R6-gPW"/>
+                        <constraint firstAttribute="width" constant="120" id="KfK-JC-ZF7"/>
+                    </constraints>
+                    <state key="normal" title="회원가입">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="9LS-SE-hb6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="0Fn-yI-vyS"/>
+                <constraint firstItem="9LS-SE-hb6" firstAttribute="leading" secondItem="NSk-vr-xXa" secondAttribute="leading" id="28R-r9-Kq9"/>
+                <constraint firstItem="9LS-SE-hb6" firstAttribute="top" secondItem="Jlh-cm-pei" secondAttribute="bottom" constant="10" id="4eE-g1-BKi"/>
+                <constraint firstItem="f7e-qF-wrq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="58Q-q6-uMO"/>
+                <constraint firstItem="9LS-SE-hb6" firstAttribute="leading" secondItem="ddA-4x-Rse" secondAttribute="leading" id="59u-Yj-RC6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4mK-uC-38F" secondAttribute="bottom" constant="488" id="5kl-M0-RvW"/>
+                <constraint firstItem="NSk-vr-xXa" firstAttribute="top" secondItem="9LS-SE-hb6" secondAttribute="bottom" constant="20" id="B9d-wF-fZa"/>
+                <constraint firstItem="4mK-uC-38F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SiM-Ca-Yf0"/>
+                <constraint firstItem="9LS-SE-hb6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="125" id="Sst-Ib-qTA"/>
+                <constraint firstItem="4mK-uC-38F" firstAttribute="top" secondItem="f7e-qF-wrq" secondAttribute="bottom" constant="20" id="aUz-a9-d7A"/>
+                <constraint firstItem="f7e-qF-wrq" firstAttribute="centerX" secondItem="9LS-SE-hb6" secondAttribute="centerX" id="kvt-ET-blJ"/>
+                <constraint firstItem="f7e-qF-wrq" firstAttribute="centerX" secondItem="ddA-4x-Rse" secondAttribute="centerX" id="lB5-8N-vM9"/>
+                <constraint firstItem="9LS-SE-hb6" firstAttribute="leading" secondItem="Jlh-cm-pei" secondAttribute="leading" id="sbH-eR-GOK"/>
+                <constraint firstItem="f7e-qF-wrq" firstAttribute="top" secondItem="ddA-4x-Rse" secondAttribute="bottom" constant="50" id="x0B-VY-teP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="152"/>
+        </view>
+    </objects>
+</document>
